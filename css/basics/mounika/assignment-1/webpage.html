@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Forest Showcase</title>
+  <link rel="stylesheet" href="fundamentals.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqN-BeDla1fIFsrbkAjxVDEvb5GqW6Sjkdaw&s') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .forest-types-container,
+    .uses-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      /* darker translucent */
+    }
+
+    .forest-types-container h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .forest-types {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .type-card {
+      flex: 1;
+      min-width: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .type-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .uses-container {
+      margin-top: 60px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .uses-container h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .uses-container ul {
+      list-style: none;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+
+    .uses-container ul li {
+      margin: 12px 0;
+      font-size: 1.1rem;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <h1 id="main-heading" style="font-size:3rem;text-align:center;">Forests: The Lungs of Earth</h1>
+    <p style="text-align:center;">Forests cover 31% of the planet’s surface and host diverse ecosystems</p>
+  </section>
+
+  <!-- Types of Forests -->
+  <section class="forest-types-container">
+    <h2>Types of Forests</h2>
+    <div class="forest-types">
+      <div class="type-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqM0j8E6GO-hiQmdgQfWjeyFFfjl34jBYulQ&s"
+          alt="Tropical">
+        <h3>Tropical</h3>
+        <p>Hot, lush, biodiverse forests near the equator.</p>
+      </div>
+      <div class="type-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSslNVzahSKhYZMQk2ObIpywlMnwA-HbYgwpNNHlgf7WD5dSxCMbIjn9ww22j-j8XOso9A&usqp=CAU"
+          alt="Tenperature">
+        <h3>Temperature</h3>
+        <p>Distinct seasons with deciduous & evergreen variety.</p>
+      </div>
+      <div class="type-card">
+        <img src="https://albertaforestproducts.ca/wp-content/uploads/2021/10/wetlants-forest-management-960x913.jpg"
+          alt="Boreal">
+        <h3>Boreal</h3>
+        <p>Cold conifer forests crucial for carbon storage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Uses -->
+  <section class="uses-container">
+    <h2 style="color: white">Uses of Forests</h2>
+    <ul>
+      <li>Provide timber & fuelwood</li>
+      <li>Prevent soil erosion</li>
+      <li>Source of food, medicine & shelter</li>
+      <li>Support recreation & tourism</li>
+      <li>Regulate water & climate systems</li>
+    </ul>
+  </section>
+</body>
+
+</html>
