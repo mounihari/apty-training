@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
 }
@@ -14,7 +14,7 @@ body {
 /* Shared header & footer */
 .header,
 .footer {
-  background: green;
+  background: #4CAF50;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -28,11 +28,18 @@ body {
   text-align: center;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 0 0 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
 }
 
 .song-item img {
-  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  background: #f4f4f4;
   border-radius: 4px;
+  display: block;
 }
 
 .song-item h2 {
@@ -70,20 +77,22 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-}
-
-.song-item {
-  flex: 0 0 calc(33.333% - 1rem);
-  max-width: calc(33.333% - 1rem);
-}
-
-.song-item img {
   width: 100%;
-  height: 300px;
-  /* Adjust height as desired */
-  object-fit: contain;
-  /* Ensure full image is visible */
-  object-position: center;
-  background: #f4f4f4;
-  display: block;
+  max-width: 1200px;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .song-item {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+/* Responsive for mobile phones */
+@media (max-width: 480px) {
+  .song-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
