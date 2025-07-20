@@ -1,0 +1,181 @@
+body{
+    background-image: url("https://www.apty.io/wp-content/uploads/2024/06/bg-hero.svg");
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+}
+
+header{
+    position: sticky;
+    padding: 1px;
+    top: 0;
+    padding-right: 3rem;
+    z-index: 8;
+    background-color: #221333;
+    color: white;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.list-item:hover{
+    cursor: pointer;
+    color: rgb(255, 85, 0);
+}
+
+.fa:hover{
+    color: white;
+}
+
+ul ul{
+    gap: 2rem;
+}
+
+.apty-button{
+    border: none;
+    background-color: orangered;
+    padding: 15px 30px;
+    margin-right: 40px;
+    margin: 10px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    display: inline-flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.apty-button:hover{
+    background: linear-gradient(100deg, orangered ,#fc56a1);
+}
+
+.color{
+    color: orangered;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content_div{
+    padding: 4rem;
+}
+
+.main-content_div h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.main-content_div p{
+    color: white;
+    font-size: 1rem;
+}
+
+.main-content_div img{
+    margin-right: 50px;  
+    /* margin: 0; */
+}
+
+.main-form_content{
+    color: white;
+    background-color: #251a33;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    height: 130vh;
+    /* width: 100%  ; */
+    border-radius: 20px;
+    /* margin: 10; */
+    margin-right: 50px;
+    margin-top: 60px;
+}
+
+.main-form_content h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.main-form_content input{
+    padding: 1rem;
+    margin-bottom: 20px;
+    background-color: #3a3147;
+    border: none;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.main-form_content .user-input{
+    width: 100%;
+    height: 100px;
+    text-align: start;
+    /* padding: 8rem; */
+}
+
+.apty-button-3{
+    border: none;
+    background-color: orangered;
+    padding: 15px 30px;
+    margin-right: 40px;
+    margin: 10px;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 17px;
+    cursor: pointer;
+    color: white;
+    display: inline-flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+    height: 200px;
+    background-color: white;
+}
+
+footer{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2.5rem;
+    background-color: rgb(24, 24, 24);
+}
+
+.list-heading{
+    font-weight: 600;
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    gap: 1rem;
+    color: gray;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.list-heading:hover{
+    color: white;
+    cursor: default;
+}
+
+footer li:hover{
+    cursor: pointer;
+    color: orangered;
+}
