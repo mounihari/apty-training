@@ -409,7 +409,7 @@ a:hover {
 }
 
 .section-5>h1>span {
-    background: -webkit-linear-gradient(0deg, #ff7433, #fc56a4);
+    background: linear-gradient(0deg, #ff7433, #fc56a4);
     background-clip: text;
     color: transparent;
 }
@@ -605,7 +605,7 @@ a:hover {
 }
 
 .section-7 .color {
-    background: -webkit-linear-gradient(0deg, #ff7433, #fc56a4);
+    background: linear-gradient(0deg, #ff7433, #fc56a4);
     background-clip: text;
     color: transparent;
 }
