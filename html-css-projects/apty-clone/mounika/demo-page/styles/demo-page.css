@@ -299,3 +299,7 @@ footer li:hover {
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+
+.footer-bottom a{
+    color: #555;
+}
