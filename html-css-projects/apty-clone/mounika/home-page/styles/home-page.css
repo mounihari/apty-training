@@ -307,6 +307,18 @@ a:hover {
     color: transparent;
 }
 
+.section-4_sub-section-1{
+    border-left: 1px solid #fc56a4;
+}
+
+.section-4_sub-section-2{
+    border-left: 1px solid #ff5b19;
+}
+
+.section-4_sub-section-3{
+    border-left: 1px solid #ff5b19;
+}
+
 .section-4_sub-section-1 h1 {
     margin-left: 30px;
     margin-top: -140px;
@@ -677,7 +689,7 @@ p {
 
 .section-9-matter:hover {
     background: linear-gradient(90deg, #ff7433, #fc56a4);
-    clip: text;
+    background-clip: text;
     color: transparent;
 }
 
