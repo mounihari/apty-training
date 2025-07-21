@@ -26,20 +26,20 @@ header {
 }
 
 .span-tag {
-  margin-left: 100px;
-  display: inline-block;
+    margin-left: 100px;
+    display: inline-block;
 }
 
 .tag {
-  line-height: 25px;
-  color: #fff;
-  text-decoration: underline;
-  font-weight: bold;
+    line-height: 25px;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .apty_logo {
-     line-height: 22px;
-     font-size: 22px;
+    line-height: 22px;
+    font-size: 22px;
 }
 
 ul {
@@ -47,8 +47,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0; 
-    margin: 0; 
+    padding: 0;
+    margin: 0;
 }
 
 .nav_item {
@@ -60,15 +60,15 @@ ul {
     gap: 0.3rem;
 }
 
-.nav_item:hover{
+.nav_item:hover {
     color: orangered;
 }
 
 .navbar-left {
-  display: flex;
-  gap: 2rem;
-  padding-left: 3rem;
-  align-items: center;
+    display: flex;
+    gap: 2rem;
+    padding-left: 3rem;
+    align-items: center;
 }
 
 button {
@@ -88,8 +88,8 @@ ul button:hover {
 }
 
 a {
-  color: inherit;         
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
@@ -102,23 +102,23 @@ a:hover {
 }
 
 .navbar-right {
-  display: flex;
-  gap: 14px;
+    display: flex;
+    gap: 14px;
 }
 
 .nav-btn {
-  padding: 8px 20px;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .hero-container {
-  padding-left: 0;
-  margin-left: 0;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .background-video {
@@ -128,16 +128,16 @@ a:hover {
     width: 100%;
     height: 110%;
     object-fit: cover;
-    z-index: -1; 
+    z-index: -1;
 }
 
-.section-1 > * {
-  margin-left: 0;
-  padding-left: 0;
+.section-1>* {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 
-.section-1{
+.section-1 {
     color: white;
     margin: 5rem;
     font-size: 61px;
@@ -164,7 +164,7 @@ a:hover {
     font-weight: 500;
 }
 
-.section-1-color-2  {
+.section-1-color-2 {
     background: -webkit-linear-gradient(0deg, #ff7433, #fc56a4);
     background-clip: text;
     color: transparent;
@@ -176,9 +176,9 @@ a:hover {
     margin-top: 20px;
 }
 
-.section-1 > * {
-  margin-left: 0;
-  padding-left: 0;
+.section-1>* {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .section-1-btn {
@@ -215,7 +215,7 @@ a:hover {
 
 .header-1 {
     color: white;
-    font-weight: 200; 
+    font-weight: 200;
     margin-top: -40px;
     font-size: 40px;
 }
@@ -295,7 +295,7 @@ a:hover {
     text-align: center;
 }
 
-.section-4 p{
+.section-4 p {
     font-size: 30px;
     margin-left: 0;
     padding-left: 0;
@@ -309,7 +309,7 @@ a:hover {
 
 .section-4_sub-section-1 h1 {
     margin-left: 30px;
-    margin-top:-140px;
+    margin-top: -140px;
     max-width: 650px;
     font-weight: 500;
     font-size: 3rem;
@@ -320,7 +320,8 @@ a:hover {
     max-width: 650px;
     font-size: 25px;
 }
-.section-4_content-1-1{
+
+.section-4_content-1-1 {
     margin-left: 0;
     padding-left: 0;
 }
@@ -332,16 +333,16 @@ a:hover {
     font-size: 20px;
 }
 
-.section-4_content-1-1{
+.section-4_content-1-1 {
     margin-left: 80px;
 }
 
-.section-4_sub-section-1 p{
+.section-4_sub-section-1 p {
     padding-left: 80px;
 }
 
 .paragraph-content {
-  text-align: center;
+    text-align: center;
 }
 
 .section-4_sub-section-2 h1 {
@@ -388,14 +389,14 @@ a:hover {
     font-size: 20px;
 }
 
-.section-5 > h1 {
+.section-5>h1 {
     font-size: 4rem;
-    color:black;
+    color: black;
     padding-left: 80px;
     padding-top: 50px;
 }
 
-.section-5 > h1 > span {
+.section-5>h1>span {
     background: -webkit-linear-gradient(0deg, #ff7433, #fc56a4);
     background-clip: text;
     color: transparent;
@@ -412,12 +413,12 @@ a:hover {
 }
 
 .section-5_sub-section-1 ul {
-  list-style: none; 
-  padding-left: 80px;
+    list-style: none;
+    padding-left: 80px;
 }
 
 .section-5_sub-section-1 li {
-  margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .side-heading-full {
@@ -449,17 +450,18 @@ a:hover {
     align-items: center;
 }
 
-.section-5_sub-section-1 > img {
+.section-5_sub-section-1>img {
     width: 55rem;
     height: 50rem;
 }
+
 .section-5_sub-section-2 {
     border-radius: 1rem;
     background: linear-gradient(60deg, #8030ff, #5C14CF);
     padding: 1.5rem;
     margin-top: 3.5rem;
     max-width: 1300px;
-    height:400px;
+    height: 400px;
     margin: 3.5rem auto;
 }
 
@@ -473,11 +475,11 @@ a:hover {
     position: relative;
 }
 
-.sub-section-2_desc  h1{
+.sub-section-2_desc h1 {
     font-size: 35px;
 }
 
-.sub-section-2_desc p{
+.sub-section-2_desc p {
     font-size: 30px;
 }
 
@@ -491,25 +493,26 @@ a:hover {
 
 
 .section-6 {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 40px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
-.section-6 p{
+.section-6 p {
     margin-left: 0;
     padding-left: 0;
 }
+
 .section-6_left {
     display: grid;
-    grid-template-rows: auto auto; 
+    grid-template-rows: auto auto;
     gap: 1rem;
 }
 
 .section-6_right {
     display: grid;
     grid-template-rows: 1fr;
-    height: 100%; 
+    height: 100%;
 }
 
 .section-6_right img {
@@ -539,18 +542,18 @@ a:hover {
 }
 
 .sub-2_desc h1,
-.sub-3_desc h1{
+.sub-3_desc h1 {
     font-size: 30px;
 }
 
 .sub-2_desc p,
-.sub-3_desc p{
+.sub-3_desc p {
     font-size: 25px;
 }
 
 .section-6_row_sub {
     flex-grow: 1;
-    background: linear-gradient(0deg, #ff7433, #fc56a4); 
+    background: linear-gradient(0deg, #ff7433, #fc56a4);
 }
 
 .section-6_sub-3 {
@@ -561,7 +564,7 @@ a:hover {
     padding-left: 300px;
 }
 
-.section-6_row_sub > img {
+.section-6_row_sub>img {
     width: 40rem;
     height: 30rem;
 }
@@ -599,11 +602,13 @@ a:hover {
     height: 600px;
 }
 
-.section-7 h1, p {
+.section-7 h1,
+p {
     padding-left: 50px;
 }
 
-.section-8, .section-9 {
+.section-8,
+.section-9 {
     padding: 3rem;
 }
 
@@ -614,11 +619,11 @@ a:hover {
     display: flex;
     justify-content: center;
     max-width: 1200px;
-    height:500px;
+    height: 500px;
     margin: 0 auto;
     padding: 40px 20px;
     color: #212121;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
 .section-8_sub1 h5 {
@@ -643,7 +648,7 @@ a:hover {
 
 .section-8_sub1 img {
     border-radius: 1rem;
-    width:500px;
+    width: 500px;
 }
 
 .image-5 {
@@ -665,9 +670,9 @@ a:hover {
 }
 
 .image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .section-9-matter:hover {
@@ -718,15 +723,16 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .section-10 img {
     position: relative;
-    bottom:100px;
+    bottom: 100px;
     left: 200px;
 }
 
 footer {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: flex-start;
     background-color: #212121;
     padding: 2.5rem;
@@ -737,13 +743,13 @@ ul li {
     color: gray;
 }
 
-ul > .heading { 
+ul>.heading {
     font-weight: bold;
     color: white;
 }
 
 
-footer ul{
+footer ul {
     display: flex;
     gap: 1rem;
     color: gray;
@@ -751,12 +757,12 @@ footer ul{
     flex-direction: column;
 }
 
-.list-heading:hover{
+.list-heading:hover {
     color: white;
     cursor: default;
 }
 
-footer li:hover{
+footer li:hover {
     cursor: pointer;
     color: orangered;
 }
