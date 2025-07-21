@@ -717,6 +717,10 @@ p {
     padding: 5rem;
 }
 
+.section-10 p {
+    padding: 0;
+}
+
 .section-10_sub-1 h1 {
     font-size: 4rem;
 }
