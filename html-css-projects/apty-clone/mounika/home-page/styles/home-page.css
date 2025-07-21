@@ -302,7 +302,7 @@ a:hover {
 }
 
 .section-4 h1 .color {
-    background: -webkit-linear-gradient(0deg, #ff7433, #fc56a4);
+    background: linear-gradient(0deg, #ff7433, #fc56a4);
     background-clip: text;
     color: transparent;
 }
