@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/demo-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
@@ -13,10 +14,12 @@
         <nav>
             <ul>
                 <li>
-                    <ul>
-                        <a href="./index.html">
-                            <img src="https://www.apty.io/wp-content/uploads/2024/06/logo.svg" width="100px" alt="logo">
-                        </a>
+                     <ul>
+                        <li>
+                            <a href="./index.html">
+                                <img src="https://www.apty.io/wp-content/uploads/2024/06/logo.svg" width="100px" alt="logo">
+                            </a>
+                        </li>
                         <li class="list-item">Platform <i class="fa fa-angle-down icon-in-menu"></i></li>
                         <li class="list-item">Solutions <i class="fa fa-angle-down icon-in-menu"></i></li>
                         <li class="list-item">Resources <i class="fa fa-angle-down icon-in-menu"></i></li>
@@ -58,16 +61,16 @@
                 <input type="text" name="jobName" id="jobName" placeholder="Job Title*">
                 <p>How would you describe yourself?</p>
                 <p>Please select all that apply</p>
-                <input type="checkbox" name="checkbox1" id="cheeckbox1">Exploring DAPs for the first time<br>
-                <input type="checkbox" name="checkbox2" id="checkbox2">Evaluating a better way to onboard and support
-                users<br>
-                <input type="checkbox" name="checkbox3" id="checkbox3">Looking to reduce support costs and improve
-                accuracy<br>
-                <input type="checkbox" name="checkbox3" id="checkbox3">Just browsing to learn what’s possible<br>
+                <input type="checkbox" name="checkbox1" id="checkbox1"><label for="checkbox1">Exploring DAPs for the first time</label><br>
+                <input type="checkbox" name="checkbox2" id="checkbox2"><label for="checkbox2">Evaluating a better way to onboard and support
+                users</label><br>
+                <input type="checkbox" name="checkbox3" id="checkbox3"><label for="checkbox3">Looking to reduce support costs and improve
+                accuracy</label><br>
+                <input type="checkbox" name="checkbox4" id="checkbox4"><label for="checkbox4">Just browsing to learn what’s possible</label><br>
                 <input class="userinput" type="text" name="feedback" id="feedback"
                     placeholder="What's the biggest challange you hope to solve with Apty?">
-                <input type="checkbox" name="checkbox3" id="checkbox3">I agree to the Terms of Service and Privacy
-                Policy<br>
+                <input type="checkbox" name="terms" id="terms"><label for="terms">I agree to the Terms of Service and Privacy
+                Policy</label><br>
                 <button class="apty-button-3">Get My Personalized Demo</button>
                 <h2>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</h2>
             </form>
@@ -76,7 +79,7 @@
 
     <div class="text-column-1">
         <div class="text-column">
-            <h1>What to <span class="color">Expect</h1></span></h1>
+            <h1>What to <span class="color">Expect</span></h1>
             <div class="text-column-1">
                 <div class="text-box">
                     <img src="../assets/conversation-1-100x100.png" alt="Relevant visual" />
