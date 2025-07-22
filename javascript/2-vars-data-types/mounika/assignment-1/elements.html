@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JS Render Order</title>
-  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const internal = document.createElement("p");
@@ -19,14 +20,19 @@
       font-family: Arial, sans-serif;
       padding: 20px;
     }
+
     p {
       margin: 10px 0;
     }
   </style>
 </head>
+
 <body>
 
-  <p id="inline">Inline JS executed at <script>document.write(new Date().toLocaleTimeString());</script></p>
+  <p id="inline">Inline JS executed at
+    <script>document.currentScript.parentNode.append(new Date().toLocaleTimeString());</script>
+  </p>
 
 </body>
+
 </html>
