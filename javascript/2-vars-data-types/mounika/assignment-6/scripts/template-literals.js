@@ -1,10 +1,10 @@
-let name = "Mounika";                
-let age = 21;                        
-let isStudent = false;                
-let notDefined;                      
-let emptyValue = null;               
-let uniqueId = Symbol("id");         
-let details = { city: "Bhimavaram" };
+const name = "Mounika";
+const age = 21;
+const isStudent = false;
+let notDefined;
+const emptyValue = null;
+const uniqueId = Symbol("id");
+const details = { city: "Bhimavaram" };
 
 let message = `
   Hi, my name is ${name}, I am ${age} years old and from ${details.city}.<br><br>
