@@ -5,12 +5,12 @@ function log(msg) {
   output.appendChild(p);
 }
 
-const str = "Hello World";         
-const num = 42;                     
-const bool = true;                  
-let undef;                         
-const nul = null;                  
-const sym = Symbol('sym');         
+const str = "Hello World";
+const num = 42;
+const bool = true;
+let undef;
+const nul = null;
+const sym = Symbol('sym');
 const obj = { name: "ChatGPT" };
 
 log(`String ("Hello World"): ${typeof str}`);

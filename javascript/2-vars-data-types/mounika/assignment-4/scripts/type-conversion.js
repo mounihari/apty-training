@@ -9,7 +9,6 @@ const values = [
 ];
 
 const output = document.getElementById("output");
-
 values.forEach(item => {
   let numberVal, stringVal, booleanVal;
 
@@ -17,13 +16,13 @@ values.forEach(item => {
   try { stringVal = String(item.value); } catch (e) { stringVal = e.message; }
   try { booleanVal = Boolean(item.value); } catch (e) { booleanVal = e.message; }
 
-  output.innerHTML += `
+  output.insertAdjacentHTML('beforeend', `
     <p>
       <strong>${item.type}</strong><br>
-      Original: ${item.value}<br>
+      Original: ${String(item.value)}<br>
       Number(): ${numberVal}<br>
       String(): ${stringVal}<br>
       Boolean(): ${booleanVal}<br><br>
     </p>
-  `;
+  `);
 });

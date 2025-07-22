@@ -5,13 +5,11 @@ function log(msg) {
   output.appendChild(p);
 }
 
-// Declare variables
 var a = 10;
 let b = 20;
 const c = 30;
 log(`Initial values -> var a: ${a}, let b: ${b}, const c: ${c}`);
 
-// Re-declare tests
 try {
   var a = 100;
   log('Re-declared var a: Success, new value = ' + a);
@@ -33,7 +31,6 @@ try {
   log('Re-declare const c error: ' + e.message);
 }
 
-// Change value tests
 try {
   a = 1000;
   log('Changed var a to: ' + a);
