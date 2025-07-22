@@ -18,11 +18,13 @@ function safeAdd(a, b) {
   }
 }
 
+const lines = [];
 for (let i = 0; i < types.length; i++) {
   for (let j = 0; j < types.length; j++) {
     const a = types[i];
     const b = types[j];
     const result = safeAdd(a.value, b.value);
-    output.textContent += `${a.type} + ${b.type} → ${String(result)}\n`;
+    lines.push(`${a.type} + ${b.type} → ${String(result)}`);
   }
 }
+output.textContent = lines.join('\n');
