@@ -44,12 +44,12 @@ function logicalOrAssign() {
   let { val1, val2 } = getConvertedValues();
   const before = val1;
   val1 ||= val2;
-  showResult('||=', before, val2);
+  showResult('||=', before, val2, val1);
 }
 
 function nullishAssign() {
   let { val1, val2 } = getConvertedValues();
   const before = val1;
   val1 ??= val2;
-  showResult('??=', before, val2);
+  showResult('??=', before, val2, val1);
 }
