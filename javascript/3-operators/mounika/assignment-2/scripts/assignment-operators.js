@@ -1,6 +1,6 @@
 function getInputValues() {
   return {
-    val1: parseFloat(document.getElementById("value1").value),
+    val1: parseFloat(document.getElementById('value1').value),
     val2: parseFloat(document.getElementById("value2").value)
   };
 }
