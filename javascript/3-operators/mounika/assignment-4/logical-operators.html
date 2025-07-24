@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logical Operators Explorer</title>
+</head>
+<body>
+
+  <h2>Logical Operators Explorer</h2>
+
+  <label>Value 1: <input type="text" id="value1" placeholder="Enter value 1"></label>
+  <label>Type 1:
+    <select id="type1">
+      <option value="string">String</option>
+      <option value="number">Number</option>
+      <option value="boolean">Boolean</option>
+      <option value="null">Null</option>
+      <option value="undefined">Undefined</option>
+      <option value="object">Object</option>
+    </select>
+  </label>
+  <br>
+
+  <label>Value 2: <input type="text" id="value2" placeholder="Enter value 2"></label>
+  <label>Type 2:
+    <select id="type2">
+      <option value="string">String</option>
+      <option value="number">Number</option>
+      <option value="boolean">Boolean</option>
+      <option value="null">Null</option>
+      <option value="undefined">Undefined</option>
+      <option value="object">Object</option>
+    </select>
+  </label>
+  <br><br>
+
+  <button onclick="logicalAnd()">&& (AND)</button>
+  <button onclick="logicalOr()">|| (OR)</button>
+  <button onclick="logicalNotValue1()">! (NOT) - Value1 only</button>
+  <button onclick="logicalNotValue2()">! (NOT) - Value2 only</button>
+
+  <div id="result"></div>
+
+  <script src="scripts/logical-operators.js"></script>
+
+</body>
+</html>

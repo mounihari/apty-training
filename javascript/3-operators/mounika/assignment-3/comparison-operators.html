@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Comparison Operator Explorer</title>
+</head>
+<body>
+
+  <h2>Comparison Operator Explorer</h2>
+
+  <label>Value 1: <input type="text" id="value1" placeholder="Enter value 1"></label>
+  <label>Type 1:
+    <select id="type1">
+      <option value="string">String</option>
+      <option value="number">Number</option>
+      <option value="boolean">Boolean</option>
+      <option value="null">Null</option>
+      <option value="undefined">Undefined</option>
+      <option value="object">Object</option>
+    </select>
+  </label>
+  <br>
+
+  <label>Value 2: <input type="text" id="value2" placeholder="Enter value 2"></label>
+  <label>Type 2:
+    <select id="type2">
+      <option value="string">String</option>
+      <option value="number">Number</option>
+      <option value="boolean">Boolean</option>
+      <option value="null">Null</option>
+      <option value="undefined">Undefined</option>
+      <option value="object">Object</option>
+    </select>
+  </label>
+  <br><br>
+
+  <button onclick="compareEquals()">==</button>
+  <button onclick="compareStrictEquals()">===</button>
+  <button onclick="compareNotEquals()">!=</button>
+  <button onclick="compareStrictNotEquals()">!==</button>
+  <button onclick="compareGreater()">></button>
+  <button onclick="compareLess()"><</button>
+  <button onclick="compareGreaterOrEqual()">>=</button>
+  <button onclick="compareLessOrEqual()"><=</button>
+
+  <div id="result"></div>
+
+  <script src="scripts/comparison-operators.js"></script>
+
+</body>
+</html>
