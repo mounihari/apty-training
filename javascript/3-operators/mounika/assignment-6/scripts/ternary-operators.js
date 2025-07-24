@@ -1,7 +1,7 @@
 function checkAge() {
   const firstName = document.getElementById("firstname").value;
   const lastName = document.getElementById("lastname").value;
-  const age = parseInt(document.getElementById("age").value);
+  const age = parseInt(document.getElementById("age").value, 10);
 
   const name = `${firstName} ${lastName}`;
   const result = (age >= 18)

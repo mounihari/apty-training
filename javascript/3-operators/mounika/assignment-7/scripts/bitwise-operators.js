@@ -1,6 +1,6 @@
 function getInputs() {
-  const val1 = parseInt(document.getElementById("value1").value);
-  const val2 = parseInt(document.getElementById("value2").value);
+  const val1 = parseInt(document.getElementById("value1").value, 10);
+  const val2 = parseInt(document.getElementById("value2").value, 10);
   return { val1, val2 };
 }
 

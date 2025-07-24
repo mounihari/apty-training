@@ -49,11 +49,11 @@ function decrementValue1() {
 function incrementValue2() {
   let val2 = parseFloat(document.getElementById('value2').value);
   val2++;
-  document.getElementById('result').innerText = `Incremented Value1: ${val2}`;
+  document.getElementById('result').innerText = `Incremented Value2: ${val2}`;
 }
 
 function decrementValue2() {
   let val2 = parseFloat(document.getElementById('value2').value);
   val2--;
-  document.getElementById('result').innerText = `Decremented Value1: ${val2}`;
+  document.getElementById('result').innerText = `Decremented Value2: ${val2}`;
 }

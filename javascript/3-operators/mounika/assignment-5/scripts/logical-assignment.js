@@ -28,16 +28,16 @@ function getConvertedValues() {
   };
 }
 
-function showResult(operator, before, after) {
+function showResult(operator, before, after, result) {
   const resultDiv = document.getElementById('result');
-  resultDiv.innerHTML = `<p><code>${JSON.stringify(before)}</code> <strong>${operator}</strong> <code>${JSON.stringify(after)}</code> => <strong>${JSON.stringify(before)}</strong></p>`;
+  resultDiv.innerHTML = `<p><code>${JSON.stringify(before)}</code> <strong>${operator}</strong> <code>${JSON.stringify(after)}</code> => <strong>${JSON.stringify(result)}</strong></p>`;
 }
 
 function logicalAndAssign() {
   let { val1, val2 } = getConvertedValues();
   const before = val1;
   val1 &&= val2;
-  showResult('&&=', before, val2);
+  showResult('&&=', before, val2, val1);
 }
 
 function logicalOrAssign() {
