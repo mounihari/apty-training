@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h2>Simple Calculator</h2>
+
+  <label>Value 1: <input type="number" id="value1"></label><br><br>
+  <label>Value 2: <input type="number" id="value2"></label><br><br>
+
+  <button onclick="calculate('+')">+</button>
+  <button onclick="calculate('-')">-</button>
+  <button onclick="calculate('*')">*</button>
+  <button onclick="calculate('/')">/</button>
+  <button onclick="calculate('%')">%</button>
+  <button onclick="calculate('++')">++ (Increment Value1)</button>
+  <button onclick="calculate('--')">-- (Decrement Value1)</button>
+
+  <p id="result"></p>
+
+  <script src="scripts/simple-calculator.js"></script>
+</body>
+</html>
