@@ -8,16 +8,24 @@ function countFrequency() {
   }
 
   const freq = {};
-  for (const index in str) {
-    const char = str[index];
+  for (const char of str) {
     freq[char] = (freq[char] || 0) + 1;
   }
 
-  let output = "<h3>Character Frequencies:</h3><ul>";
-  for (const char in freq) {
-    output += `<li>'${char}': ${freq[char]}</li>`;
-  }
-  output += "</ul>";
+  // Clear old content safely
+  resultDiv.innerHTML = "";
 
-  resultDiv.innerHTML = output;
+  const heading = document.createElement("h3");
+  heading.textContent = "Character Frequencies:";
+  resultDiv.appendChild(heading);
+
+  const ul = document.createElement("ul");
+
+  for (const char in freq) {
+    const li = document.createElement("li");
+    li.textContent = `'${char}': ${freq[char]}`;
+    ul.appendChild(li);
+  }
+
+  resultDiv.appendChild(ul);
 }

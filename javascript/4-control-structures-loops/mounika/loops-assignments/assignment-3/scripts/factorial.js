@@ -1,9 +1,13 @@
 function calculateFactorial() {
   const num = parseInt(document.getElementById("factorialInput").value);
   const outputDiv = document.getElementById("factorialOutput");
+  
+  outputDiv.innerHTML = "";
 
   if (isNaN(num) || num < 0) {
-    outputDiv.innerHTML = "<p>Please enter a non-negative integer.</p>";
+    const errorPara = document.createElement("p");
+    errorPara.textContent = "Please enter a non-negative integer.";
+    outputDiv.appendChild(errorPara);
     return;
   }
 
@@ -17,8 +21,18 @@ function calculateFactorial() {
     i++;
   } while (i <= num);
 
-  outputDiv.innerHTML = `
-    <p><strong>Calculation:</strong> ${steps}</p>
-    <p><strong>Result:</strong> ${num}! = ${factorial}</p>
-  `;
+  const calcPara = document.createElement("p");
+  const strongCalc = document.createElement("strong");
+  strongCalc.textContent = "Calculation:";
+  calcPara.appendChild(strongCalc);
+  calcPara.appendChild(document.createTextNode(` ${steps}`));
+
+  const resultPara = document.createElement("p");
+  const strongResult = document.createElement("strong");
+  strongResult.textContent = "Result:";
+  resultPara.appendChild(strongResult);
+  resultPara.appendChild(document.createTextNode(` ${num}! = ${factorial}`));
+
+  outputDiv.appendChild(calcPara);
+  outputDiv.appendChild(resultPara);
 }
