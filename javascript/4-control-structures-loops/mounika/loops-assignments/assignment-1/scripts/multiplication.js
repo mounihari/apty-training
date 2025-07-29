@@ -1,16 +1,26 @@
+document.getElementById("generateBtn").addEventListener("click", generateTable);
+
 function generateTable() {
-  const number = parseInt(document.getElementById("numberInput").value);
+  const numberInput = document.getElementById("numberInput");
   const outputDiv = document.getElementById("tableOutput");
+  const number = parseInt(numberInput.value.trim());
+
+  outputDiv.innerHTML = "";
 
   if (isNaN(number)) {
-    outputDiv.innerHTML = "<p>Please enter a valid number.</p>";
+    const errorPara = document.createElement("p");
+    errorPara.textContent = "Please enter a valid number.";
+    outputDiv.appendChild(errorPara);
     return;
   }
 
-  let tableHTML = `<h3>Multiplication Table for ${number}</h3>`;
-  for (let i = 1; i <= 10; i++) {
-    tableHTML += `<p>${number} × ${i} = ${number * i}</p>`;
-  }
+  const heading = document.createElement("h3");
+  heading.textContent = `Multiplication Table for ${number}`;
+  outputDiv.appendChild(heading);
 
-  outputDiv.innerHTML = tableHTML;
+  for (let i = 1; i <= 10; i++) {
+    const row = document.createElement("p");
+    row.textContent = `${number} × ${i} = ${number * i}`;
+    outputDiv.appendChild(row);
+  }
 }
