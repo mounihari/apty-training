@@ -1,23 +1,23 @@
+class BankingError extends Error {
+  constructor(errorCode, errorMessage) {
+    super(errorMessage);
+    this.errorCode = errorCode;
+    this.errorMessage = errorMessage;
+    this.name = 'BankingError';
+  }
+}
+
 function withdrawAmount(balance, amount) {
   if (isNaN(balance) || isNaN(amount)) {
-    throw {
-      errorCode: 400,
-      errorMessage: "Inputs must be valid numbers."
-    };
+    throw new BankingError(400, "Inputs must be valid numbers.");
   }
 
   if (amount <= 0) {
-    throw {
-      errorCode: 422,
-      errorMessage: "Withdrawal amount must be greater than zero."
-    };
+    throw new BankingError(422, "Withdrawal amount must be greater than zero.");
   }
 
   if (amount > balance) {
-    throw {
-      errorCode: 403,
-      errorMessage: "Insufficient balance for withdrawal."
-    };
+    throw new BankingError(403, "Insufficient balance for withdrawal.");
   }
 
   return balance - amount;
