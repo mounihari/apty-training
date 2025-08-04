@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Higher-Order Filter</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Filter Numbers with Callback</h2>
+    <form id="filterForm">
+      <label for="numbers">Enter numbers (comma separated):</label>
+      <input type="text" id="numbers" placeholder="e.g. 10, 50, 30, 90" required />
+
+      <label for="limit">Max allowed value:</label>
+      <input type="number" id="limit" required />
+
+      <button type="submit">Filter</button>
+    </form>
+
+    <p id="output"></p>
+  </div>
+
+  <script src="scripts/hof-with-arrow-functions.js"></script>
+</body>
+</html>
