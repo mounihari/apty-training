@@ -11,7 +11,7 @@ const users = {
   }
 };
 
-const default_city = "Pune";
+const DEFAULT_CITY = "Pune";
 
 document.getElementById('userForm').addEventListener('submit', function (e) {
   e.preventDefault();
