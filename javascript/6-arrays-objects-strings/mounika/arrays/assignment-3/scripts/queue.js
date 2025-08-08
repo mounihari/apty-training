@@ -1,9 +1,13 @@
 let queue = [];
 
+function updateQueueState() {
+  document.getElementById('queueState').innerText = `Queue: [${queue.join(', ')}]`;
+}
+
 function enqueue() {
   let value = document.getElementById('queueInput').value.trim();
   if (value) {
-    queue.unshift(value);
+    queue.push(value);
     document.getElementById('queueInput').value = '';
     updateQueueState();
     document.getElementById('output').innerText = `${value} added to the queue`;
@@ -29,12 +33,10 @@ function checkEmpty() {
 
 function peek() {
   if (queue.length > 0) {
-    document.getElementById('output').innerText = `Next element: ${queue[queue.length - 1]}`;
+    document.getElementById('output').innerText = `Next element: ${queue[0]}`;
   } else {
     document.getElementById('output').innerText = 'Queue is empty';
   }
 }
 
-function updateQueueState() {
-  document.getElementById('queueState').innerText = JSON.stringify(queue);
-}
+updateQueueState();
