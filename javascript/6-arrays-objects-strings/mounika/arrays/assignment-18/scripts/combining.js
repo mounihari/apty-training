@@ -1,6 +1,6 @@
 function processArray() {
   const input = document.getElementById("numbersInput").value;
-  const numbers = input.split(',').map(Number);
+  const numbers = input ? input.split(',').map(Number) : [];
 
   const result = numbers
     .filter(n => n % 2 === 0)

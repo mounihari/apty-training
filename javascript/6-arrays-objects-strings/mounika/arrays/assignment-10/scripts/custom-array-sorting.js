@@ -13,7 +13,7 @@ function sortByProperty() {
     });
 
     document.getElementById('sortOutput').textContent = JSON.stringify(sorted);
-  } catch {
+  } catch (error) {
     document.getElementById('sortOutput').textContent = '❌ Invalid input or property!';
   }
 }
