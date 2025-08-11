@@ -51,7 +51,7 @@ const shadowHost = document.getElementById("shadowHost");
 const shadowRoot = shadowHost.attachShadow({ mode: "open" });
 
 shadowRoot.innerHTML = `
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/shadowdom-elements.css">
   ${shadowHTMLContent}
 `;
 
