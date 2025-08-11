@@ -57,7 +57,7 @@ shadowRoot.innerHTML = `
 
 document.getElementById("btnId").addEventListener("click", () => {
     const element = shadowRoot.getElementById("p2");
-    element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
 });
 
 document.getElementById("btnClass").addEventListener("click", () => {
