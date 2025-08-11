@@ -1,6 +1,6 @@
 document.getElementById("btnId").addEventListener("click", function () {
   const element = document.getElementById("p2");
-  element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
 });
 
 document.getElementById("btnClass").addEventListener("click", function () {
