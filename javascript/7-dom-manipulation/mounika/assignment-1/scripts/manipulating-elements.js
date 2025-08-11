@@ -13,7 +13,7 @@ document.getElementById("btnClass").addEventListener("click", function () {
 document.getElementById("btnTag").addEventListener("click", function () {
   const spans = document.getElementsByTagName("span");
   for (let i = 0; i < spans.length; i++) {
-    spans[i].innerHTML = "Updated Span " + (i + 1);
+    spans[i].textContent = "Updated Span " + (i + 1);
   }
 });
 
