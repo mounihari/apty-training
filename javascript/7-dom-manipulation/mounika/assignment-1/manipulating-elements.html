@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Access & Manipulation</title>
+  <link rel="stylesheet" href="styles/manipulating-elements.css">
+</head>
+<body>
+
+<h2>DOM Access and Manipulation</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Class Name</th>
+    <th>Tag</th>
+    <th>Name</th>
+    <th>Attribute</th>
+  </tr>
+  <tr>
+    <td>
+      <p id="p1">Paragraph 1</p>
+      <p id="p2">Paragraph 2</p>
+      <p id="p3">Paragraph 3</p>
+      <button id="btnId">Change Color (p2)</button>
+    </td>
+
+    <td>
+      <p class="sameClass">Class Para 1</p>
+      <p class="sameClass">Class Para 2</p>
+      <p class="sameClass">Class Para 3</p>
+      <button id="btnClass">Toggle Background</button>
+    </td>
+
+    <td>
+      <span>Span 1</span><br>
+      <span>Span 2</span><br>
+      <span>Span 3</span><br>
+      <button id="btnTag">Change Span Text</button>
+    </td>
+
+    <td>
+      <input type="text" name="input1" value="Value1"><br>
+      <input type="text" name="input2" value="Value2"><br>
+      <input type="text" name="input3" value="Value3"><br>
+      <button id="btnName">Toggle Disable</button>
+    </td>
+
+    <td>
+      <p custom-attr="a1">Attr Para 1</p>
+      <p custom-attr="a2">Attr Para 2</p>
+      <p custom-attr="a3">Attr Para 3</p>
+      <button id="btnAttr">Add New Attribute</button>
+    </td>
+  </tr>
+</table>
+
+<script src="scripts/manipulating-elements.js"></script>
+</body>
+</html>

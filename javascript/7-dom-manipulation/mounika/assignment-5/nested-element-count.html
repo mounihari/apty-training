@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Element Counter</title>
+  <link rel="stylesheet" href="styles/nested-element-count.css">
+</head>
+<body>
+
+<h2>Nested Element Count per First-Level Parent</h2>
+
+<div id="parent1">
+  <p>Paragraph inside Parent 1</p>
+  <span>Span inside Parent 1</span>
+  <div>
+    <p>Nested paragraph in a div</p>
+    <span>Deep nested span</span>
+  </div>
+</div>
+
+<div id="parent2">
+  <p>Paragraph inside Parent 2</p>
+  <iframe src="about:blank"></iframe>
+</div>
+
+<section id="parent3">
+  <p>Section paragraph</p>
+  <div>
+    <p>Deep paragraph</p>
+    <div><span>Even deeper span</span></div>
+  </div>
+</section>
+
+<button id="countBtn">Count Elements</button>
+
+<div id="result"></div>
+
+<script src="scripts/nested-element.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.toggle-div {
+  border: 1px solid #333;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #e2e2e2;
+}

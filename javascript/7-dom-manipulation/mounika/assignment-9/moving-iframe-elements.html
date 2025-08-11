@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Move Table Rows in iFrame</title>
+  <link rel="stylesheet" href="styles/moving-iframe-elements.css"/>
+</head>
+<body>
+
+<h2>Move Table Rows (iFrame Version)</h2>
+
+<iframe id="myFrame" style="width: 60%; height: 400px; border: 1px solid black;"></iframe>
+
+<div style="margin-top: 15px;">
+  <button id="btnUp">Up</button>
+  <button id="btnDown">Down</button>
+  <button id="btnTop">Top</button>
+  <button id="btnBottom">Bottom</button>
+  <p>Select row: <input type="number" id="rowIndex" min="1" max="10" value="1" style="width:50px;"></p>
+</div>
+
+<script src="scripts/moving-iframe-elements.js"></script>
+</body>
+</html>
