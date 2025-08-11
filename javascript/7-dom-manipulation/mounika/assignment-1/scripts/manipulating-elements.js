@@ -1,6 +1,6 @@
 document.getElementById("btnId").addEventListener("click", function () {
   const element = document.getElementById("p2");
-  element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
 });
 
 document.getElementById("btnClass").addEventListener("click", function () {
@@ -13,7 +13,7 @@ document.getElementById("btnClass").addEventListener("click", function () {
 document.getElementById("btnTag").addEventListener("click", function () {
   const spans = document.getElementsByTagName("span");
   for (let i = 0; i < spans.length; i++) {
-    spans[i].innerHTML = "Updated Span " + (i + 1);
+    spans[i].textContent = "Updated Span " + (i + 1);
   }
 });
 

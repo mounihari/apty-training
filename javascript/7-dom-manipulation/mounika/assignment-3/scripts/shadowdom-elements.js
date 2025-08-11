@@ -51,13 +51,13 @@ const shadowHost = document.getElementById("shadowHost");
 const shadowRoot = shadowHost.attachShadow({ mode: "open" });
 
 shadowRoot.innerHTML = `
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/shadowdom-elements.css">
   ${shadowHTMLContent}
 `;
 
 document.getElementById("btnId").addEventListener("click", () => {
     const element = shadowRoot.getElementById("p2");
-    element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    element.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
 });
 
 document.getElementById("btnClass").addEventListener("click", () => {
