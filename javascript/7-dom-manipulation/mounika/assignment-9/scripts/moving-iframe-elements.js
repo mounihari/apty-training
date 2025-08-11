@@ -16,10 +16,7 @@ const iframeHTML = `
   </table>
 `;
 
-const doc = iframe.contentDocument || iframe.contentWindow.document;
-doc.open();
-doc.write(`<html><head></head><body>${iframeHTML}</body></html>`);
-doc.close();
+iframe.srcdoc = `<html><head></head><body>${iframeHTML}</body></html>`;
 
 const btnUp = document.getElementById("btnUp");
 const btnDown = document.getElementById("btnDown");
