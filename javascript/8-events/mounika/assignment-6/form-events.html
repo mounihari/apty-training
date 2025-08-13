@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Live Form Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="registerForm">
+  <label>
+    Name:
+    <input type="text" id="name" required>
+    <span id="nameError" style="color:red;"></span>
+  </label>
+  <br><br>
+
+  <label>
+    Email:
+    <input type="email" id="email" required>
+    <span id="emailError" style="color:red;"></span>
+  </label>
+  <br><br>
+
+  <label>
+    Password:
+    <input type="password" id="password" required>
+    <span id="passwordError" style="color:red;"></span>
+  </label>
+  <br><br>
+
+  <button type="submit">Register</button>
+</form>
+
+<script src="scripts/form-events.js"></script>
+</body>
+</html>

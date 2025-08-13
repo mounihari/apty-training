@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prevent Default Form Submission</title>
+</head>
+<body>
+
+<h2>Form Validation with preventDefault()</h2>
+
+<form id="myForm">
+  <label>
+    Name:
+    <input type="text" id="name" required>
+  </label>
+  <br><br>
+  <label>
+    Email:
+    <input type="email" id="email" required>
+  </label>
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<p id="message" style="color:red;"></p>
+
+<script src="scripts/prevent-default-action.js"></script>
+</body>
+</html>
