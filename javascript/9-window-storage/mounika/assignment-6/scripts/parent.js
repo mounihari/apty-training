@@ -7,5 +7,8 @@ document.getElementById("sendToChild").addEventListener("click", () => {
 });
 
 window.addEventListener("message", (event) => {
+  if (event.origin !== new URL(childFrame.src).origin) {
+    return; // Ignore messages from unknown origins
+  }
   parentOutput.textContent = "From Child: " + event.data;
 });
