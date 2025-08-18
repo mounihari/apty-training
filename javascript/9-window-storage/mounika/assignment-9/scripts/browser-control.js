@@ -10,6 +10,7 @@ openBtn.onclick = () => {
   if(!childWin || childWin.closed){
     childWin = window.open("", "childWindow", "width=400,height=300");
     childWin.document.write("<h2>Hello! This is a new window.</h2>");
+    childWin.document.close();
   } else {
     alert("Window is already open");
   }
