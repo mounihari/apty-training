@@ -4,18 +4,19 @@ const localOut = document.getElementById("localOut");
 const sessionOut = document.getElementById("sessionOut");
 
 function renderStorage() {
-  localOut.innerHTML = '';
-  sessionOut.innerHTML = '';
-
+  let localHtml = '';
   for(let i=0; i<localStorage.length; i++){
     const k = localStorage.key(i);
-    localOut.innerHTML += `<p>${k} : ${localStorage.getItem(k)}</p>`;
+    localHtml += `<p>${k} : ${localStorage.getItem(k)}</p>`;
   }
+  localOut.innerHTML = localHtml;
 
+  let sessionHtml = '';
   for(let i=0; i<sessionStorage.length; i++){
     const k = sessionStorage.key(i);
-    sessionOut.innerHTML += `<p>${k} : ${sessionStorage.getItem(k)}</p>`;
+    sessionHtml += `<p>${k} : ${sessionStorage.getItem(k)}</p>`;
   }
+  sessionOut.innerHTML = sessionHtml;
 }
 
 document.getElementById("saveLocal").onclick = () => {
