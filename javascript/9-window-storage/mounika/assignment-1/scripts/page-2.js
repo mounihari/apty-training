@@ -4,7 +4,7 @@ function goToUrl() {
 }
 
 function goToPage1() {
-    window.location.href = 'index.html';
+    window.location.href = 'page-1.html';
 }
 
 function goBack() {
