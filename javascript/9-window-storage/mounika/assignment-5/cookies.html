@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookies</title>
+</head>
+<body>
+  <h1>Cookies</h1>
+
+  <label>
+    Name:
+    <input id="cookieName" type="text" placeholder="username">
+  </label>
+  <label>
+    Value:
+    <input id="cookieValue" type="text" placeholder="Mounika">
+  </label>
+  <label>
+    Expiry (days):
+    <input id="cookieDays" type="number" min="1" value="1">
+  </label>
+  <br>
+  <button id="setBtn">Set Cookie</button>
+  <button id="getBtn">Read Cookie</button>
+  <button id="delBtn">Delete Cookie</button>
+
+  <h3>Output</h3>
+  <div id="output"></div>
+
+  <script src="scripts/cookies.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messaging</title>
+</head>
+<body>
+  <h1>Parent Window</h1>
+
+  <label>
+    Message to Child:
+    <input id="parentMsg" type="text" placeholder="Hello Child">
+  </label>
+  <button id="sendToChild">Send</button>
+
+  <h3>Messages from Child:</h3>
+  <div id="parentOutput"></div>
+
+  <iframe id="childFrame" src="child.html" width="400" height="200"></iframe>
+
+  <script src="scripts/parent.js"></script>
+</body>
+</html>

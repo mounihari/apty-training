@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Window</title>
+</head>
+<body>
+    <h1>Parent Window</h1>
+
+    <label for="parentMessage">Enter message for child:</label>
+    <input type="text" id="parentMessage" placeholder="Message to child">
+    <button id="sendToChild">Send to Child</button>
+
+    <h3>Messages from Child:</h3>
+    <p id="fromChild">No message yet</p>
+
+    <iframe src="child.html" id="childFrame" width="400" height="200"></iframe>
+
+    <script src="scripts/parent.js"></script>
+</body>
+</html>
