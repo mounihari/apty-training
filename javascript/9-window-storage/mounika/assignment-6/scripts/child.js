@@ -1,10 +1,15 @@
 const childOutput = document.getElementById("childOutput");
 
 window.addEventListener("message", (event) => {
-  childOutput.textContent = "From Parent: " + event.data;
+  const trustedOrigin = "http://localhost:8080";
+  if (event.origin !== trustedOrigin) return;
+
+  childOutput.textContent = "From Parent: " + String(event.data);
 });
 
 document.getElementById("sendToParent").addEventListener("click", () => {
   const msg = document.getElementById("childMsg").value;
-  window.parent.postMessage(msg, "*");
+  const parentOrigin = "http://localhost:8080";
+  window.parent.postMessage(msg, parentOrigin);
 });
+
