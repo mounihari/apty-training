@@ -8,77 +8,113 @@ const idInput = document.getElementById('idInput');
 const API_URL = 'https://dummyjson.com/products';
 
 async function fetchProducts(limit = 20) {
-  try {
-    const response = await fetch(`${API_URL}?limit=${limit}`);
-    if (!response.ok) throw new Error('Network response was not ok');
-    const data = await response.json();
-    return data.products;
-  } catch (error) {
-    console.error('Fetch error:', error);
-    productsContainer.innerHTML = `<p style="color:red;">Error fetching products</p>`;
-    return [];
-  }
+  const response = await fetch(`${API_URL}?limit=${limit}`);
+  if (!response.ok) throw new Error('Error fetching products');
+  const data = await response.json();
+  return data.products;
 }
 
 async function searchProducts(query) {
-  try {
-    const response = await fetch(`${API_URL}/search?q=${query}`);
-    if (!response.ok) throw new Error('Search failed');
-    const data = await response.json();
-    return data.products;
-  } catch (error) {
-    console.error('Search error:', error);
-    productsContainer.innerHTML = `<p style="color:red;">Error searching products</p>`;
-    return [];
-  }
+  const response = await fetch(`${API_URL}/search?q=${query}`);
+  if (!response.ok) throw new Error('Error searching products');
+  const data = await response.json();
+  return data.products;
 }
 
 async function getProductById(id) {
-  try {
-    const response = await fetch(`${API_URL}/${id}`);
-    if (!response.ok) throw new Error('Product not found');
-    const product = await response.json();
-    renderProducts([product]);
-  } catch (error) {
-    console.error('Error fetching product by ID:', error);
-    productsContainer.innerHTML = `<p style="color:red;">${error.message}</p>`;
-  }
+  const response = await fetch(`${API_URL}/${id}`);
+  if (!response.ok) throw new Error('Product not found');
+  return await response.json();
 }
 
 function renderProducts(products) {
+  productsContainer.innerHTML = '';
+
   if (!products.length) {
-    productsContainer.innerHTML = '<p>No products found.</p>';
+    const msg = document.createElement('p');
+    msg.textContent = 'No products found.';
+    productsContainer.appendChild(msg);
     return;
   }
-  productsContainer.innerHTML = products.map(p => `
-    <div class="product-card">
-      <img src="${p.thumbnail || p.images?.[0]}" alt="${p.title}">
-      <h3>${p.title}</h3>
-      <p>${p.description}</p>
-      <p><b>$${p.price}</b></p>
-    </div>
-  `).join('');
+
+  const fragment = document.createDocumentFragment();
+
+  for (const p of products) {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+
+    const img = document.createElement('img');
+    img.src = p.thumbnail || p.images?.[0] || '';
+    img.alt = p.title;
+
+    const title = document.createElement('h3');
+    title.textContent = p.title;
+
+    const description = document.createElement('p');
+    description.textContent = p.description;
+
+    const price = document.createElement('p');
+    const priceBold = document.createElement('b');
+    priceBold.textContent = `$${p.price}`;
+    price.appendChild(priceBold);
+
+    card.append(img, title, description, price);
+    fragment.appendChild(card);
+  }
+
+  productsContainer.appendChild(fragment);
+}
+
+function renderError(message) {
+  productsContainer.innerHTML = '';
+  const errMsg = document.createElement('p');
+  errMsg.style.color = 'red';
+  errMsg.textContent = message;
+  productsContainer.appendChild(errMsg);
 }
 
 searchBtn.addEventListener('click', async () => {
   const query = searchInput.value.trim();
-  if (query) {
+  if (!query) return;
+
+  try {
     const results = await searchProducts(query);
     renderProducts(results);
+  } catch (err) {
+    console.error(err);
+    renderError(err.message);
   }
 });
 
 allBtn.addEventListener('click', async () => {
-  const results = await fetchProducts();
-  renderProducts(results);
+  try {
+    const results = await fetchProducts();
+    renderProducts(results);
+  } catch (err) {
+    console.error(err);
+    renderError(err.message);
+  }
 });
 
-viewBtn.addEventListener('click', () => {
+viewBtn.addEventListener('click', async () => {
   const id = idInput.value.trim();
-  if (id) getProductById(id);
+  if (!id) return;
+
+  try {
+    const product = await getProductById(id);
+    renderProducts([product]);
+  } catch (err) {
+    console.error(err);
+    renderError(err.message);
+  }
 });
 
 window.addEventListener('DOMContentLoaded', async () => {
-  const initialProducts = await fetchProducts(20);
-  renderProducts(initialProducts);
+  try {
+    const initialProducts = await fetchProducts(20);
+    renderProducts(initialProducts);
+  } catch (err) {
+    console.error(err);
+    renderError(err.message);
+  }
 });
